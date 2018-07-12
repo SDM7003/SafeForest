@@ -1,0 +1,886 @@
+/* Fonts */
+@font-face {
+    font-family: 'Kelly Slab';
+    src: local('Kelly Slab'), local('KellySlab-Regular'), url('../../dist/fonts/kellyslab.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* ---------*/
+
+/* Sections */
+#sectionOne,
+#sectionTwo,
+#sectionThree,
+#sectionThreeOne,
+#sectionThreeTwo,
+#sectionThreeThree,
+#sectionFour,
+#contactSection{
+    margin-bottom: 50px;
+}
+body{
+    background-color: #d7d2cd;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.navbar-nav {
+    float: none;
+    text-align: center;
+    font-family: "Kelly Slab";
+}
+.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+.navbar-default,
+.navbar-fixed-top{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.navbar-fixed-top {
+    padding-right: 15px;
+    padding-left: 5px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-fixed-top .navbar-nav > .active > a{
+    color: white;
+    border-color: rgba(47, 196, 198, 1);
+    background-color: rgba(47, 196, 198, 1);
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-fixed-top .navbar-nav > li > a{
+    color: #645844;
+}
+.nav > li > a {
+    margin-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid rgba(100, 88, 68, 1);
+    border-bottom: 1px solid rgba(100, 88, 68, 1);
+    height: 50px;
+    font-size: 35px;
+    line-height: 29px;
+    text-align: center;
+    transition: linear 0.3s;
+}
+.nav > li > a:hover,
+.nav > li > a:focus{
+    color: white !important;
+    border-color: rgba(47, 196, 198, 1);
+    background-color: rgba(47, 196, 198, 1) !important;
+}
+a.active {
+    color: white !important;
+    border-color: rgba(47, 196, 198, 1);
+    background-color: rgba(47, 196, 198, 1) !important;
+}
+header.save-park-name{
+    color: #383C03;
+    margin-bottom: -85px;
+    text-transform: uppercase;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+header.save-park-name h1{
+    font-family: "Kelly Slab";
+    font-weight: 400;
+    font-size: 75px;
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    position: relative;
+    top: -135px;
+}
+span.img-icon{
+    z-index: -99999;
+    position: relative;
+}
+.square{
+    background-color: white;
+    border: 4px solid rgba(100, 88, 68, 1);
+    color: #826F52;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.square.sq1{
+    font-family: "Kelly Slab";
+}
+.block-text{
+    padding-bottom: 20px;
+}
+.square h2{
+    margin-top: 0;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right{
+    font-size: 90px;
+    margin-top: -55px;
+}
+.glyphicon-chevron-left:before,
+.glyphicon-chevron-right:before {
+    content: none;
+}
+.carousel-control.left,
+.carousel-control.right{
+    background-image: none;
+    transition: 0.3s linear;
+}
+.carousel-img{
+    width: 100%;
+}
+.btn{
+    outline: none !important;
+}
+.btn.btn-signup{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(169, 183, 9, 1);
+    border: 2px solid rgba(169, 183, 9, 1);
+    border-radius: 0;
+    transition: 0.2s linear;
+    outline: none;
+}
+.vibration{
+    animation: 0.15s tremor ease-out infinite;
+}
+.btn.btn-signup:hover{
+    animation: none;
+    color: rgba(100, 88, 68, 1);
+    background-color: transparent;
+    border-color: rgba(100, 88, 68, 1);
+}
+@-webkit-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        top:-1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        top: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@-moz-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@-ms-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@-o-keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+@keyframes tremor {
+    0%, 25% {
+        left: -1px;
+        -webkit-transform: translateX(-1%);
+        transform: translateX(-1%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(1%);
+        transform: translateX(1%);
+    }
+}
+.sq2{
+    background-color: transparent;
+    font-size: 14px;
+}
+.sq2 h2{
+    font-family: "Kelly Slab";
+}
+.sq2 .block-text{
+    padding-bottom: 10px;
+}
+a.help{
+    color: #2FC4C6;
+    float: right;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+a.help:hover{
+    color: red;
+}
+.map-2gis{
+    width: 100%;
+    height: 425px;
+}
+.leaflet-right .leaflet-control,
+.leaflet-left .leaflet-control{
+    display: none;
+}
+.card{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+
+}
+.card h3{
+    font-size: 30px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-weight: 400 !important;
+    line-height: 230px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card p.card-text{
+    text-align: center;
+    font-size: 19px;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+
+}
+.flip-container {
+    perspective: 1000px;
+    cursor: pointer;
+}
+/*.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}*/
+.flip-container, .front {
+    width: 100%;
+    height: 288px;
+}
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    background-color: #c7cd6a;
+    position: relative;
+}
+.front{
+    backface-visibility: hidden !important;
+    background-color: #c7cd6a;
+    position: absolute;
+    padding: 20px;
+    margin-top: -30px;
+}
+.front {
+    z-index: 2;
+}
+.class-text{
+    display: none;
+    color: white;
+    line-height: 35px;
+}
+.helpIcon{
+    display: inline;
+    width: 50px;
+    transition: 2s ease-in-out;
+}
+#sectionFour h3{
+    margin-top: 14px;
+}
+#sectionFour p{
+    font-size: 16px;
+    font-family: "Arial";
+    text-align: justify;
+    padding-right: 20px;
+}
+.how:hover .helpIcon{
+    transform: rotate(360deg);
+}
+.how a,
+#contactSection a{
+    color: #826F52;
+    text-decoration: underline;
+    transition: .2s linear;
+}
+.how a:hover,
+#contactSection a:hover{
+    color: #b78a45;
+}
+.contactText{
+    font-size: 16px;
+    font-weight: bold;
+}
+.widgets{
+    margin-top: 50px;
+}
+label span{
+    color: red;
+}
+.form-control{
+    border-radius: 0;
+    border-color: #826F52;
+    background-color: transparent;
+    color: #826F52;
+}
+.form-control:focus{
+    border-color: #826F52;
+    box-shadow: inset 0 1px 1px #826f5299, 0 0 8px #826f5299;
+    -webkit-box-shadow: inset 0 1px 1px #826f5299, 0 0 8px #826f5299;
+    -moz-box-shadow: inset 0 1px 1px #826f5299, 0 0 8px #826f5299;
+}
+.messageArea{
+    width: 100%;
+    border-radius: 0;
+    border-color: #826F52;
+    background-color: transparent;
+    color: #826F52;
+    outline: none;
+    padding: 6px 12px;
+    resize: none;
+    height: 100px;
+}
+.messageArea:focus{
+    border-color: #826F52;
+    box-shadow: inset 0 1px 1px #826f5299, 0 0 8px #826f5299;
+    -webkit-box-shadow: inset 0 1px 1px #826f5299, 0 0 8px #826f5299;
+    -moz-box-shadow: inset 0 1px 1px #826f5299, 0 0 8px #826f5299;
+}
+.send{
+    font-size: 16px !important;
+}
+label.afterSentMessage{
+    display: none;
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: -20px;
+    color: red;
+    font-weight: 400;
+}
+footer.page-footer{
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    color: #826F52;
+    font-size: 13px;
+}
+footer p{
+    margin: 0;
+}
+footer.company-footer{
+    float: right;
+}
+footer.page-footer p.company-name{
+    color: #826F52;
+    float: right;
+    font-size: 13px;
+}
+footer.page-footer a.full-comp-name {
+    color: #826F52;
+}
+footer.page-footer label.comp-name{
+    color: #826F52;
+    text-decoration: none;
+    border-bottom: 1px dotted #826F52;
+    font-weight: normal;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+footer.page-footer label.comp-name:hover{
+    color: #ec5959;
+    border-bottom-color: #ec5959;
+    transform: scale(1.2);
+    margin-left: 10px;
+}
+
+/* Adaptive Styles */
+@media only screen and (min-width: 1600px){
+    .card p.card-text{
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width: 1800px){
+    .card p.card-text {
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .block-text{
+        font-size: 17px;
+    }
+    .square h2{
+        font-size: 28px;
+    }
+    .card h3{
+        font-size: 25px;
+    }
+    .card p.card-text{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    .navbar-nav{
+        margin-left: -45px;
+        margin-right: -30px;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-default, .navbar-fixed-top{
+        padding-bottom: 0;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+    .navbar-nav>li{
+        display: block;
+    }
+    .container-fluid > .navbar-header{
+        margin-top: -15px;
+    }
+    .mobileVersion{
+        margin-bottom: 25px;
+    }
+    .square{
+        margin-bottom: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .cardMobile{
+        margin-bottom: 0;
+    }
+    .card p.card-text{
+        font-size: 18px;
+    }
+    footer.page-footer{
+        text-align: center;
+    }
+    footer.page-footer p.company-name{
+        float: none;
+    }
+}
+@media only screen and (width: 1024px) {
+    .block-text{
+        font-size: 13px;
+    }
+    .sq2 h2{
+        font-size: 20px;
+    }
+    .btn.btn-signup{
+        font-size: 25px;
+    }
+    .card h3{
+        font-size: 18px;
+    }
+    footer.page-footer{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-device-width: 823px) and (orientation: landscape){
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: -15px;
+    }
+    .navbar-default, .navbar-fixed-top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .container-fluid > .navbar-header{
+        margin-top: 0;
+    }
+    .container-fluid > .navbar-collapse{
+        margin-left: -45px;
+        margin-right: -15px;
+    }
+    .navbar-nav li{
+        display: block;
+    }
+    .nav > li > a{
+        font-size: 25px;
+        margin-left: 0;
+    }
+    header.save-park-name h1{
+        font-size: 81px;
+        top: -180px;
+    }
+    header.save-park-name{
+        margin-bottom: -180px;
+    }
+    .mobileVersion{
+        margin-bottom: 25px;
+    }
+    .btn.btn-signup{
+        font-size: 19px;
+    }
+    .square{
+        margin-bottom: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .cardMobile{
+        margin-bottom: 0;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p.card-text{
+        font-size: 25px;
+    }
+    .class-text{
+        line-height: 50px;
+    }
+    .mobileVersionText{
+        font-size: 30px;
+    }
+    .how{
+        margin-bottom: 30px;
+    }
+    .how + .how + .how + .how{
+        margin-bottom: 0;
+    }
+    footer.page-footer{
+        text-align: center;
+    }
+    footer.page-footer p.company-name{
+        float: none;
+    }
+}
+@media only screen and (max-device-width: 812px) and (orientation: landscape){
+    .container-fluid > .navbar-collapse{
+        margin-right: -15px;
+        padding-left: 75px;
+    }
+    .navbar-nav{
+        margin-right: -15px;
+    }
+    .class-text{
+        line-height: 41px;
+    }
+    .card p.card-text{
+        font-size: 17px;
+    }
+    header.save-park-name{
+
+    }
+}
+@media only screen and (max-device-width: 736px) and (orientation: landscape){
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar-default, .navbar-fixed-top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .container-fluid > .navbar-collapse{
+        margin-left: -45px;
+        margin-right: -15px;
+    }
+    .navbar-nav li{
+        display: block;
+    }
+    .nav > li > a{
+        font-size: 25px;
+    }
+    header.save-park-name h1{
+        font-size: 72px;
+        top: -165px;
+    }
+    header.save-park-name{
+        margin-bottom: -145px;
+    }
+    .mobileVersion{
+        margin-bottom: 25px;
+    }
+    .btn.btn-signup{
+        font-size: 19px;
+    }
+    .square{
+        margin-bottom: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .cardMobile{
+        margin-bottom: 0;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p.card-text{
+        font-size: 25px;
+    }
+    .class-text{
+        line-height: 50px;
+    }
+    .mobileVersionText{
+        font-size: 30px;
+    }
+    .how{
+        margin-bottom: 30px;
+    }
+    .how + .how + .how + .how{
+        margin-bottom: 0;
+    }
+    footer.page-footer{
+        text-align: center;
+    }
+    footer.page-footer p.company-name{
+        float: none;
+    }
+}
+@media only screen and (min-width: 420px) and (max-width: 767px){
+    .navbar-nav{
+        margin-right: -15px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar-default, .navbar-fixed-top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .container-fluid > .navbar-header{
+        margin-top: 0;
+    }
+    .container-fluid > .navbar-collapse{
+        margin-left: -35px;
+        padding-left: 50px;
+    }
+    .navbar-nav li{
+        display: block;
+    }
+    .navbar-nav{
+        margin-right: -15px;
+    }
+    .nav > li > a{
+        font-size: 25px;
+    }
+    header.save-park-name h1{
+        font-size: 55px;
+        top: -145px;
+    }
+    header.save-park-name{
+        margin-bottom: -105px;
+    }
+    .mobileVersion{
+        margin-bottom: 25px;
+    }
+    .btn.btn-signup{
+        font-size: 19px;
+    }
+    .square{
+        margin-bottom: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .cardMobile{
+        margin-bottom: 0;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .class-text{
+        line-height: 35px;
+    }
+    .card p.card-text{
+        font-size: 17px;
+    }
+    .mobileVersionText{
+        font-size: 32px;
+    }
+    .how{
+        margin-bottom: 30px;
+    }
+    .how + .how + .how + .how{
+        margin-bottom: 0;
+    }
+    footer.page-footer{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .back {
+        line-height: 27px;
+    }
+}
+@media only screen and (max-device-width: 568px) and (orientation: landscape){
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar-default, .navbar-fixed-top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .container-fluid > .navbar-collapse{
+        margin-left: -35px;
+        margin-right: -15px;
+    }
+    .navbar-nav li{
+        display: block;
+    }
+    .nav > li > a{
+        font-size: 25px;
+    }
+    header.save-park-name h1{
+        font-size: 60px;
+        top: -155px;
+    }
+    header.save-park-name {
+        margin-bottom: -115px;
+    }
+    .mobileVersion{
+        margin-bottom: 25px;
+    }
+    .btn.btn-signup{
+        font-size: 19px;
+    }
+    .square{
+        margin-bottom: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .cardMobile{
+        margin-bottom: 0;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p.card-text{
+        font-size: 19px;
+    }
+    .class-text{
+        line-height: 50px;
+    }
+    .mobileVersionText{
+        font-size: 25px;
+    }
+    .how{
+        margin-bottom: 30px;
+    }
+    .how + .how + .how + .how{
+        margin-bottom: 0;
+    }
+    footer.page-footer{
+        text-align: center;
+    }
+    footer.page-footer p.company-name{
+        float: none;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .navbar-nav{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .navbar-default, .navbar-fixed-top{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .container-fluid > .navbar-collapse{
+        margin-left: -35px;
+    }
+    .navbar-nav li{
+        display: block;
+    }
+    .nav > li > a{
+        font-size: 25px;
+    }
+    header.save-park-name h1{
+        font-size: 55px;
+        top: -145px;
+    }
+    .mobileVersion{
+        margin-bottom: 25px;
+    }
+    .btn.btn-signup{
+        font-size: 19px;
+    }
+    .square{
+        margin-bottom: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+    .cardMobile{
+        margin-bottom: 0;
+    }
+    .card h3{
+        font-size: 20px;
+    }
+    .card p.card-text{
+        font-size: 17px;
+    }
+    .class-text{
+        line-height: 25px;
+    }
+    .mobileVersionText{
+        font-size: 25px;
+    }
+    .how{
+        margin-bottom: 30px;
+    }
+    .how + .how + .how + .how{
+        margin-bottom: 0;
+    }
+    footer.page-footer{
+        text-align: center;
+    }
+}
