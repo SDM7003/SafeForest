@@ -164,7 +164,7 @@
             <!-- Section Three -->
             <div id="sectionThree" class="row">
                 <div class="col-xs-12 col-md-12">
-                    <div id="carousel-2" class="carousel slide" data-ride="stop">
+                    <div id="carousel-2" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
