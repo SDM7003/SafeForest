@@ -118,6 +118,16 @@ span.img-icon{
 .square h2{
     margin-top: 0;
 }
+.carousel-control,
+.carousel-control:active,
+.carousel-control:focus{
+    color: black;
+    opacity: 1;
+}
+.carousel-control:hover{
+    color: black;
+    opacity: 0.75;
+}
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right{
     font-size: 90px;
@@ -131,6 +141,32 @@ span.img-icon{
 .carousel-control.right{
     background-image: none;
     transition: 0.3s linear;
+}
+.carousel-indicators li{
+    border: 2px solid black;
+}
+.carousel-indicators .active{
+    background-color: black;
+}
+.carousel-caption p{
+    text-align: justify;
+    font-size: 17px;
+}
+.caption-1{
+    left: 65%;
+    bottom: 40px;
+    right: 10%;
+}
+.caption-2{
+    top: 40px;
+    left: 50%;
+    bottom: 0;
+    right: 10%;
+}
+.caption-3{
+    left: 10%;
+    bottom: 40px;
+    right: 55%;
 }
 .carousel-img{
     width: 100%;
@@ -291,17 +327,22 @@ a.help:hover{
 .front{
     backface-visibility: hidden !important;
     background-color: #c7cd6a;
+    border: 1px solid black;
     position: absolute;
     padding: 20px;
     margin-top: -30px;
+    transition: .4s linear;
 }
 .front {
     z-index: 2;
 }
+.front:hover{
+    border: 1px solid red;
+}
 .class-text{
     display: none;
     color: white;
-    line-height: 35px;
+    line-height: 27px;
 }
 .helpIcon{
     display: inline;
@@ -422,10 +463,16 @@ footer.page-footer label.comp-name:hover{
     .card p.card-text{
         font-size: 22px;
     }
+    .class-text{
+        line-height: 24px;
+    }
 }
 @media only screen and (min-width: 1800px){
     .card p.card-text {
-        font-size: 28px;
+        font-size: 23px;
+    }
+    .class-text{
+        line-height: 24px;
     }
 }
 @media only screen and (max-width: 1280px){
@@ -435,8 +482,8 @@ footer.page-footer label.comp-name:hover{
     .square h2{
         font-size: 28px;
     }
-    .card h3{
-        font-size: 25px;
+    .card h3 {
+        font-size: 23px;
     }
     .card p.card-text{
         font-size: 16px;
@@ -492,6 +539,22 @@ footer.page-footer label.comp-name:hover{
     .square{
         margin-bottom: 50px;
     }
+    .caption-1 {
+        left: 50%;
+        bottom: 40px;
+        right: 15%;
+    }
+    .caption-2 {
+        top: 20%;
+        left: 20%;
+        bottom: 0;
+        right: 20%;
+    }
+    .caption-3 {
+        left: 15%;
+        bottom: 60px;
+        right: 35%;
+    }
     .card{
         margin-bottom: 30px;
     }
@@ -500,6 +563,9 @@ footer.page-footer label.comp-name:hover{
     }
     .card p.card-text{
         font-size: 18px;
+    }
+    .class-text{
+        line-height: 27px;
     }
     footer.page-footer{
         text-align: center;
@@ -518,11 +584,30 @@ footer.page-footer label.comp-name:hover{
     .btn.btn-signup{
         font-size: 25px;
     }
+    .class-text {
+        line-height: 22px;
+    }
+    .caption-2 {
+        top: 10%;
+        left: 15%;
+        bottom: 0;
+        right: 30%;
+    }
     .card h3{
         font-size: 18px;
     }
     footer.page-footer{
         font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1080px) and (max-width: 1199px){
+    .class-text{
+        line-height: 25px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1080px){
+    .class-text{
+        line-height: 22px;
     }
 }
 @media only screen and (max-device-width: 823px) and (orientation: landscape){
@@ -604,14 +689,35 @@ footer.page-footer label.comp-name:hover{
     .navbar-nav{
         margin-right: -15px;
     }
-    .class-text{
-        line-height: 41px;
+    .class-text {
+        line-height: 35px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .caption-1 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 40%;
+    }
+    .caption-2 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 25%;
+    }
+    .caption-2 p{
+        font-size: initial;
+    }
+    .caption-3 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 28%
     }
     .card p.card-text{
         font-size: 17px;
-    }
-    header.save-park-name{
-
     }
 }
 @media only screen and (max-device-width: 736px) and (orientation: landscape){
@@ -649,6 +755,33 @@ footer.page-footer label.comp-name:hover{
     .square{
         margin-bottom: 50px;
     }
+    .carousel-control.left, .carousel-control.right{
+        display: none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .caption-1 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 40%;
+    }
+    .caption-2 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 18%;
+    }
+    .caption-2 p{
+        font-size: initial;
+    }
+    .caption-3 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 19%;
+    }
     .card{
         margin-bottom: 30px;
     }
@@ -683,6 +816,33 @@ footer.page-footer label.comp-name:hover{
 @media only screen and (min-width: 420px) and (max-width: 767px){
     .navbar-nav{
         margin-right: -15px;
+    }
+    .carousel-control.left, .carousel-control.right{
+        display: none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .caption-1 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 80px;
+    }
+    .caption-2 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 15px;
+    }
+    .caption-2 p{
+        font-size: initial;
+    }
+    .caption-3 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 35px;
     }
 }
 @media only screen and (max-width: 414px) {
@@ -726,6 +886,37 @@ footer.page-footer label.comp-name:hover{
     .square{
         margin-bottom: 50px;
     }
+    .carousel-control.left, .carousel-control.right{
+        display: none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+    .caption-1 {
+        left: 10%;
+        top: 10%;
+        right: 10%;
+    }
+    .caption-1 p{
+        font-size: 14px;
+    }
+    .caption-2 {
+        top: 0;
+        left: 5%;
+        bottom: 15px;
+        right: 5%;
+    }
+    .caption-2 p{
+        font-size: 11px !important;
+    }
+    .caption-3 {
+        left: 10%;
+        top: 10%;
+        right: 10%;
+    }
     .card{
         margin-bottom: 30px;
     }
@@ -754,9 +945,45 @@ footer.page-footer label.comp-name:hover{
         text-align: center;
     }
 }
+@media only screen and (min-width: 370px) and (max-width: 400px){
+    .class-text {
+        line-height: 25px;
+    }
+}
 @media only screen and (max-width: 360px) {
     .back {
         line-height: 27px;
+    }
+    .carousel-control.left, .carousel-control.right{
+        display: none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+    .caption-1 {
+        left: 10%;
+        top: 10%;
+        right: 10%;
+    }
+    .caption-1 p{
+        font-size: 14px;
+    }
+    .caption-2 {
+        top: -5px;
+        left: 5%;
+        bottom: 15px;
+        right: 5%;
+    }
+    .caption-2 p{
+        font-size: 11px !important;
+    }
+    .caption-3 {
+        left: 10%;
+        top: 10%;
+        right: 10%;
     }
 }
 @media only screen and (max-device-width: 568px) and (orientation: landscape){
@@ -824,6 +1051,33 @@ footer.page-footer label.comp-name:hover{
     footer.page-footer p.company-name{
         float: none;
     }
+    .carousel-control.left, .carousel-control.right{
+        display: none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .caption-1 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 80px;
+    }
+    .caption-2 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 15px;
+    }
+    .caption-2 p{
+        font-size: initial;
+    }
+    .caption-3 {
+        left: 13%;
+        bottom: 0;
+        right: 13%;
+        top: 35px;
+    }
 }
 @media only screen and (max-width: 320px) {
     .navbar-nav{
@@ -882,5 +1136,33 @@ footer.page-footer label.comp-name:hover{
     }
     footer.page-footer{
         text-align: center;
+    }
+    .carousel-control.left, .carousel-control.right{
+        display: none;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+    .caption-1 {
+        left: 13%;
+        bottom: 7px;
+        right: 13%;
+    }
+    .caption-2 {
+        top: 0;
+        left: 5%;
+        bottom: 15px;
+        right: 5%;
+    }
+    .caption-2 p{
+        font-size: 9px !important;
+    }
+    .caption-3 {
+        left: 13%;
+        bottom: -18px;
+        right: 13%;
     }
 }

@@ -164,21 +164,45 @@
             <!-- Section Three -->
             <div id="sectionThree" class="row">
                 <div class="col-xs-12 col-md-12">
-                    <div id="carousel-2" class="carousel slide" data-ride="carousel">
+                    <div id="carousel-2" class="carousel slide" data-ride="stop">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-2" data-slide-to="1"></li>
+                            <li data-target="#carousel-2" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Indicators End -->
+                        <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img class="carousel-img" src="sources/img/sliders/slide2-1.png">
+                                <img class="carousel-img" src="sources/img/sliders/slide2-2.png">
+                                <div class="carousel-caption caption-1">
+                                    <p>В Кировском районе г. Самара находится крупнейшая в городе зелёная зона -
+                                        лесопарк имени 60-летия Советской власти, размером около 133 га.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <img class="carousel-img" src="sources/img/sliders/slide1-2.png">
+                                <img class="carousel-img" src="sources/img/sliders/slide2-4.png">
+                                <div class="carousel-caption caption-2">
+                                    <p>«…Масштабные изменения обозначены для лесопарка им. 60-летия Советской власти в
+                                        Кировском районе, находящегося сейчас в крайне запущенном состоянии. На
+                                        территории лесопарка предусмотрено строительство жилого массива и создание
+                                        "Волжского Диснейленда" с городками героев мультфильмов и сказок, аттракционами,
+                                        анимационными площадками и стилизованными замками и башнями парка»</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <img class="carousel-img" src="sources/img/sliders/slide1-3.png">
-                            </div>
-                            <div class="item">
-                                <img class="carousel-img" src="sources/img/sliders/slide1-4.png">
+                                <img class="carousel-img" src="sources/img/sliders/slide2-3.png">
+                                <div class="carousel-caption caption-3">
+                                    <p>Из независимого медиа Самарской области «Самарское Обозрение» от 14 марта 2018
+                                        г.… «…Областной арбитражный суд восстановил за компанией «Лагуна», бенефициаром
+                                        которой является Беник Айвазян, право собственности на участок в границах
+                                        лесопарка им. 60-летия Советской власти.</p>
+                                </div>
                             </div>
                         </div>
+                        <!-- Wrapper for slides End -->
+                        <!-- Left and right controls -->
                         <a class="left carousel-control" href="#carousel-2" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left"><i class="fa fa-angle-left"
                                                                       aria-hidden="true"></i></span>
@@ -189,6 +213,7 @@
                                                                            aria-hidden="true"></i></span>
                             <span class="sr-only"></span>
                         </a>
+                        <!-- Left and right controls End -->
                     </div>
                 </div>
             </div>
@@ -220,7 +245,7 @@
             <!-- Section Three-Two -->
             <div id="sectionThreeTwo" class="row">
                 <div class="col-md-4 col-sm-6">
-                    <div class="card flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="card flip-container" ontouchstart="this.classList.toggle('hover');" title="Для прочтения подробностей нажмите на карточку">
                         <div class="flipper">
                             <div class="front">
                                 <h3 class="title-card">Экология</h3>
@@ -237,7 +262,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="card flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="card flip-container" ontouchstart="this.classList.toggle('hover');" title="Для прочтения подробностей нажмите на карточку">
                         <div class="flipper">
                             <div class="front">
                                 <h3 class="title-card">Лесной кодекс</h3>
@@ -251,7 +276,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <div class="card cardMobile flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="card cardMobile flip-container" ontouchstart="this.classList.toggle('hover');" title="Для прочтения подробностей нажмите на карточку">
                         <div class="flipper">
                             <div class="front">
                                 <h3 class="title-card">Кировский район</h3>
@@ -508,7 +533,7 @@
             $.ajax({
                 type: "POST",
                 url: "contact-form-action.php",
-                data: "inputName=" + $("inputName").val() + "&inputEmail=" + $("#inputEmail").val() + "&inputSubject=" + $("#inputSubject").val() + "&messageArea=" + $("#messageArea").val(),
+                data: "inputName=" + $("#inputName").val() + "&inputEmail=" + $("#inputEmail").val() + "&inputSubject=" + $("#inputSubject").val() + "&messageArea=" + $("#messageArea").val(),
                 success: function (html) {
                     $("label.afterSentMessage").css('display', 'block');
                 }
