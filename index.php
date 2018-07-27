@@ -461,7 +461,6 @@
 
 </div>
 <div class="col-xs-12 col-md-1"></div>
-</body>
 <!-- Page Scripts --->
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script rel="script" type="text/javascript" src="dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -545,4 +544,5 @@
     });
     /*---------*/
 </script>
+</body>
 </html>
