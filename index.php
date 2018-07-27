@@ -6,43 +6,9 @@
     <title>Защитим лесопарк Самары</title>
     <!-- Pages Stylesheets --->
     <link rel="icon" href="sources/icons/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="sources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="dist/font-awesome-4.7.0/css/font-awesome.css">
-    <!-- Page Scripts --->
-    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script rel="script" type="text/javascript" src="dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <script rel="script" type="text/javascript" src="sources/js/main.js"></script>
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <script type="text/javascript">
-        var map;
-
-        DG.then(function () {
-            map = DG.map('map', {
-                center: [53.26062, 50.253555],
-                zoom: 15,
-                dragging: false,
-                touchZoom: false,
-                scrollWheelZoom: false,
-                doubleClickZoom: false
-            });
-
-            DG.marker([53.26062, 50.253555]).addTo(map).bindPopup('Парк имени 60-летия Советской власти');
-        });
-    </script>
-
-    <!-- VK Widget Scripts -->
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
-    <script type="text/javascript">
-        VK.Widgets.Group("vk_groups", {
-            mode: 2,
-            wide: 1,
-            no_cover: 1,
-            width: "auto",
-            height: "500",
-            color3: 'A9B91B'
-        }, 166576908);
-    </script>
+    <link rel="stylesheet" type="text/css" href="dist/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="col-xs-12 col-md-1"></div>
@@ -496,6 +462,40 @@
 </div>
 <div class="col-xs-12 col-md-1"></div>
 </body>
+<!-- Page Scripts --->
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script rel="script" type="text/javascript" src="dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script rel="script" type="text/javascript" src="sources/js/main.js"></script>
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [53.26062, 50.253555],
+            zoom: 15,
+            dragging: false,
+            touchZoom: false,
+            scrollWheelZoom: false,
+            doubleClickZoom: false
+        });
+
+        DG.marker([53.26062, 50.253555]).addTo(map).bindPopup('Парк имени 60-летия Советской власти');
+    });
+</script>
+
+<!-- VK Widget Scripts -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?154"></script>
+<script type="text/javascript">
+    VK.Widgets.Group("vk_groups", {
+        mode: 2,
+        wide: 1,
+        no_cover: 1,
+        width: "auto",
+        height: "500",
+        color3: 'A9B91B'
+    }, 166576908);
+</script>
 <script>
     jQuery(function ($) {
         $(window).scroll(function () {
